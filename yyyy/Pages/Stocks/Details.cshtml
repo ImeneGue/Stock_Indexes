@@ -1,0 +1,43 @@
+﻿@page
+@model yyyy.Pages.Stocks.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Stock</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Stock.NomStock)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Stock.NomStock)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Stock.IndexShortCut)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Stock.IndexShortCut)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Stock.PrixActuel)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Stock.PrixActuel)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Stock.PrixInitial)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Stock.PrixInitial)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Stock?.StockId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

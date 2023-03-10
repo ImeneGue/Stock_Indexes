@@ -1,0 +1,52 @@
+﻿@page
+@*@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+*@
+
+
+
+<h1> Stock market indexes</h1>
+
+
+
+<div >
+
+	<table id="stocks" class="table">
+		<thead>
+			<tr>
+			@*	<th>ID</th>*@
+				<th>Index</th>
+				<th>Symbol</th>
+				<th>Openning price</th>
+				<th>Price Now</th>
+				<th>Change</th>
+				<th>%</th>
+				
+			</tr>
+		</thead>
+		<tbody id="stock1">
+		</tbody>
+	</table>
+</div>
+
+
+
+
+
+
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/stock.js"></script>
+<script src="~/css/site.css"></script>
+
+
+
+
+	
